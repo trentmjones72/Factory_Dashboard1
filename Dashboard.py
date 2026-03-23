@@ -145,7 +145,7 @@ fig1, ax1 = plt.subplots(figsize=(10, 4))
 ax1.plot(daily_summary["Date"], daily_summary["Actual Output"], marker="o", label="Actual Output")
 ax1.plot(daily_summary["Date"], daily_summary["Target Output"], marker="o", linestyle="--", label="Target Output")
 ax1.set_xlabel("Date")
-ax1.set_ylabel("Units Produced")
+ax1.set_ylabel("Units of Product Produced (kg/h)")
 ax1.legend()
 plt.xticks(rotation=45)
 st.pyplot(fig1)
@@ -233,7 +233,7 @@ for rec in recommendations:
 # ----------------------------
 # Detailed data table
 # ----------------------------
-st.subheader("Detailed Performance Data")
+st.subheader("Detailed Performance Data (Fake data generated arbitrarily for purpose of project)")
 st.dataframe(filtered_df, use_container_width=True)
 
 # ----------------------------
